@@ -34,6 +34,7 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+<img width="672" height="778" alt="Screenshot 2025-10-08 210809" src="https://github.com/user-attachments/assets/a779eeee-7d40-41bc-ac78-7e3590e2a947" />
 
 **Procedure**
 
@@ -48,14 +49,25 @@ Figure -02 HALF Subtractor
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
+**Program:**module exp4(diff, borrow, a, b);
+  output diff;
+  output borrow;
+  input a;
+  input b;
+  assign diff = a ^ b;
+  assign borrow = ~a & b;
+endmodule
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
 Developed by: RegisterNumber:*/
 
 **RTL Schematic**
+<img width="356" height="182" alt="Screenshot 2025-10-08 210425" src="https://github.com/user-attachments/assets/f96dc1e2-6527-484b-8312-0351277f37db" />
 
-**Output/TIMING Waveform**
+**Output/TIMING Waveform****<img width="1082" height="329" alt="Screenshot 2025-10-08 210717" src="https://github.com/user-attachments/assets/61189763-2ea6-410a-a74e-80fa77af8d6c" />
 
-**Result:**
+
+
+**Result: Thus the module is verified successfully.
+
